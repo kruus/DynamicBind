@@ -65,7 +65,7 @@ def save_clean_protein(s, toFile, keep_chain='A', keep_all_protein_chains=True):
         print("toFile should end with .cif or .pdb")
     io.set_structure(s)
     io.save(toFile, MySelect())
-    
+
 
 def clean_one_pdb(proteinFile, toFile):
     if proteinFile[-4:] == ".cif":
